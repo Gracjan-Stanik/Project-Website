@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Techniek College</title>
+  <link rel="stylesheet" href="opmaak.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Margarine&family=Righteous&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo-techniek-college.png" alt="Techniek College Rotterdam Logo">
+            <div class="logo-text">
+                <span id="title">Ouderavond</span>
+            </div>
+        </div>
+    </header>
+    <main>
+        <nav>
+            <ul>
+                <li>
+                    <li class="Home"><a href="index.html">Home</a></li>
+
+                    <li class="dropdown">
+                        <button class="dropbtn">Over ons</button>
+                        <ul class="dropdown-content">
+                            <li><a href="Pascal.html">Pascal</a></li>
+                            <li><a href="Gracjan.html">Gracjan</a></li>
+                        </ul>
+                    </li>
+                </li>
+              
+                <li class="dropdown">
+                    <button class="dropbtn">Locatiegids</button>
+                    <ul class="dropdown-content">
+                        <li><a href="beleiding.html">Beleiding</a></li>
+                        <li><a href="examenplannen.html">Examenplannen</a></li>
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <button class="dropbtn">leermiddelen</button>
+                    <ul class="dropdown-content">
+                        <li><a href="Canvas.html">Canvas</Canvas></a></li>
+                        <li><a href="eduarten.html">Eduarten</a></li>
+                    </ul>
+                </li>
+
+                <li class="BSA"><a href="BSA.html">BSA</a></li>
+                
+                 <li class="dropdown">
+                    <button class="dropbtn">Contact</button>
+                     <ul class="dropdown-content">
+                        <li><a href="contactformulier.html">Contact formulier</a></li>
+                        <li><a href="Infomatieformulier.html">Infomatie formulier</a></li>
+                     </ul>
+                </li>  
+            </ul>
+        </nav>
+    <br><br>
+    <div class="container">
+        <div class="header2">
+            <h1>Contact formulier</h1>
+        </div>
+        <br>
+        <div class="content1">
+            <div class="left">
+                <form action="">
+                    <h2>Contact formulier</h2>
+                    <br><br>
+                  
+                    <label for="voornaam">voornaam:</label>
+                    <input type="voornaam" id="voornaam"pattern="[A-Za-z]+" required placeholder="Voornaam in vullen">
+                     
+                  
+                    <label for="achtnaam">Achternaam:</label>
+                    <input type="achternaam" id="Achternaam"pattern="[A-Za-z]+"required placeholder="Achternaam in vullen" >
+                    <br><br>
+                    
+                    <label>Geslacht:</label>
+                    <input type="radio" id="man" name="geslacht" value="man" checked required >
+                    <label for="man">Man</label>
+                  
+                    <input type="radio" id="vrouw" name="geslacht" value="vrouw"required>
+                    <label for="vrouw">Vrouw</label>
+                  
+                    <input type="radio" id="Anders" name="geslacht" value="Anders"required>
+                    <label for="Anders">Anders</label>
+                    <br><br>
+                  
+                    <label for="straat">Straat:</label>
+                    <input type="text" id="straat" pattern="[A-Za-z]+" placeholder="straat in vullen " required>
+                    
+                  
+                    <label for="nr">nr:</label >
+                    <input type="text" id="nr" pattern=[A-I1-9]{9} placeholder="123456789" required>
+                  
+                    <br><br>
+                    <label for="Postcode">Postcode:</label>
+                    <input type="text" id="Postcode" placeholder="1234AB" pattern="=[A-I1-9]{9}" required>
+                    <br><br>
+                  
+                    <label for="Stad"> Stad:</label>
+                    <input type="text" id="Stad"pattern="[A-Za-z]+" placeholder="Rotterdam" required>
+                    <br><br>
+                
+                   <label for="E-mail">Gmail:</label>
+                   <input type="email" id="E-mail "required placeholder="Vul hier je E-mail">
+                   <br><br>
+
+                    <label for="Telefoonnummer">Telefoonnummer:</label>
+                    <input type="text" id="Postcode" placeholder="123456789" pattern="=[A-I1-9]{9}" required>
+                    <br><br>
+
+                   <!-- Verzendknop -->
+                   <input type="submit" value="Verzend">
+                   <br><br>
+                  </form>
+                  <p>Mocht u behoefte hebben aan meer informatie dan wel een vraag hebben, neem dan contact met ons op d.m.v. bovenstaand in het menu bij contact. Voor meer vragen kunt u ook terecht op het informatieformulier.</p>
+            </div>
+            <div class="right">
+            </div>
+        </div>
+    </main>
+    <footer>
+         <div class="footer-container">
+         <p>&copy; Gemaakt door Pascal</p>
+        </div>
+    </footer>
+</body>
+</html>
