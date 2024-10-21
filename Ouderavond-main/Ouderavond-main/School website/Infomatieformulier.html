@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informatieformulier</title>
+    <link rel="stylesheet" href="opmaak.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Margarine&family=Righteous&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo-techniek-college.png" alt="Techniek College Rotterdam Logo">
+            <div class="logo-text">
+                <span id="title">Informatieformulier</span>
+            </div>
+        </div>
+    </header>
+    <main>
+        <nav>
+            <ul>
+                <li class="Home"><a href="index.html">Home</a></li>
+
+                <li class="dropdown">
+                    <button class="dropbtn">Over ons</button>
+                    <ul class="dropdown-content">
+                        <li><a href="Pascal.html">Pascal</a></li>
+                        <li><a href="Gracjan.html">Gracjan</a></li>
+                    </ul>
+                </li>
+              
+                <li class="dropdown">
+                    <button class="dropbtn">Locatiegids</button>
+                    <ul class="dropdown-content">
+                        <li><a href="beleiding.html">Beleiding</a></li>
+                        <li><a href="examenplannen.html">Examenplannen</a></li>
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <button class="dropbtn">Leermiddelen</button>
+                    <ul class="dropdown-content">
+                        <li><a href="Canvas.html">Canvas</a></li>
+                        <li><a href="eduarten.html">Eduarten</a></li>
+                    </ul>
+                </li>
+
+                <li class="BSA"><a href="BSA.html">BSA</a></li>
+                
+                 <li class="dropdown">
+                    <button class="dropbtn">Contact</button>
+                     <ul class="dropdown-content">
+                        <li><a href="contactformulier.html">Contactformulier</a></li>
+                        <li><a href="Infomatieformulier.html">Informatieformulier</a></li>
+                     </ul>
+                </li>  
+            </ul>
+        </nav>
+        <br><br>
+        <div class="container">
+            <div class="header2">
+                <h1>Informatieformulier</h1>
+            </div>
+            <br>
+            <div class="content1">
+                <form action="submit_form.php" method="post">
+                    <label for="naam">Naam:</label><br>
+                    <input type="text" id="naam" name="naam" placeholder="Voer je naam in" required><br><br>
+                    
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" placeholder="Voer je e-mail in" required><br><br>
+                    
+                    <label for="geboortedatum">Geboortedatum:</label><br>
+                    <input type="date" id="geboortedatum" name="geboortedatum" required><br><br>
+                    
+                    <label for="leermiddel">Favoriete leermiddel:</label><br>
+                    <select id="leermiddel" name="leermiddel">
+                        <option value="canvas">Canvas</option>
+                        <option value="eduarten">Eduarten</option>
+                        <option value="andere">Andere</option>
+                    </select><br><br>
+                    
+                    <label for="feedback">Opmerkingen:</label><br>
+                    <textarea id="feedback" name="feedback" rows="4" cols="50" placeholder="Uw opmerkingen of vragen..."></textarea><br><br>
+                    
+                    <label for="ouderavond">Komt u naar de Ouderavond?</label><br>
+                    <input type="radio" id="ja" name="ouderavond" value="ja" required>
+                    <label for="ja">Ja</label><br>
+                    <input type="radio" id="nee" name="ouderavond" value="nee" required>
+                    <label for="nee">Nee</label><br><br>
+                    
+                    <label for="bestand">Upload een document (optioneel):</label><br>
+                    <input type="file" id="bestand" name="bestand"><br><br>
+                    
+                    <input type="submit" value="Verzenden">
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <p>&copy; Gemaakt door Gracjan</p>
+        </div>
+    </footer>
+</body>
+</html>
